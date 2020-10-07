@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>DOM Manipulation</title>   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    <div id="demo" class="mydemo">
+    <p id="p1" class="pa">This paragraph contains some <b>informations</b></p>
+    <div id="demo1">
+    <p>Paragraph</p></div>
+    </div><br>
+    <button id="btn1">Addclass</button><br><br>
+    <button id="btn2">Removeclass</button><br><br>
+    <button id="btn3">Toggleclass</button><br><br>
+    <button id="btn4">Css</button><br><br>
+   
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  $("document").ready(function (){
+  $("#btn1").click(function (){
+  				$("#demo").addClass("newclass newparaclass");
+  				});
+  				$("#btn2").click(function (){
+  				$("#demo").removeClass("newclass newparaclass");
+  				});
+  				$("#btn3").click(function (){
+  				$("#demo").toggleClass("newclass newparaclass");
+  				});
+  				$("#btn4").click(function (){
+  				alert($("#demo").css("font-style","italic"));
+  				});
+    			});
+    </script>
+</body>
+</html>

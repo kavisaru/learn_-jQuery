@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    <div id="demo" class="mydemo">
+    <p id="p1" class="pa">This paragraph contains some <b>informations</b></p>
+    </div><br>
+    <button id="btn1">Append</button><br><br>
+    <button id="btn2">After</button><br><br>
+    <button id="btn3">Prepend</button><br><br>
+    <button id="btn4">Before</button><br><br>
+    <button id="btn5">Remove</button><br><br>
+    <button id="btn6">Empty</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  $("document").ready(function (){
+   
+   $("#btn1").click(function (){
+    			$("#demo").append("<p>Paragraph1</p>");
+    				});
+    				$("#btn2").click(function (){
+    			$("#demo").after("<p>Paragraph1</p>");
+    				});
+    			$("#btn3").click(function (){
+    			$("#demo").prepend("<p>Paragraph1</p>");
+    				});
+    				$("#btn4").click(function (){
+    			$("#demo").before("<p>Paragraph1</p>");
+    				});
+    				//Remove and empty
+  $("#btn5").click(function (){
+			$("#demo").remove();
+    				});
+    	$("#btn6").click(function (){
+   	$("#demo").empty();
+    				});
+    				});
+    				</script>
+</body>
+</html>

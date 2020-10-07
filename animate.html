@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+    <div id="rect" class="myrect">
+    <p>cube</p>
+    </div><br>
+    <button id="btn">Animate</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+  				$("#btn").click(function(){
+  				$(".myrect").animate({
+  											left:'200px',
+  											width:'150px',
+  											height:'100px',
+  										opacity:'1'
+  											},'slow')
+  										
+
+  								});
+  								});
+  								</script>
+</html>

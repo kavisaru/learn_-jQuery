@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DoM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    <div id="demo" class="mydemo">
+    <p id="p1" class="pa" value="welcome">This paragraph contains some <b>informations</b></p>
+    </div><br>
+    <button id="btn">Set value</button>
+    <button id="btn1">Get value</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  $("document").ready(function (){
+  				$("#btn1").click(function (){
+  			
+  				alert($("p").css("font-size","30px"));
+  						});
+  			$("#btn").click(function (){
+  				//alert($("p").attr("class", 'hello'));
+  				alert($("p").css("font-size"));
+  						});
+  							});
+  							
+  							</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback and Chaining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="first" class="mydiv">
+    <p>Paragraph 1</p>
+    </div>
+    <div id="second" class="mydiv">
+    <p>paragraph 2</p>
+    </div>
+    <button id="btn">Toggle</button>
+   </body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  $("document").ready(function (){
+  $("#btn").click(function (){
+  				//$("#first").slideToggle(2000, function (){
+  							//	alert("Slided");
+  				//});
+  			//	$("#second").fadeToggle(2000, function (){
+  							//	alert("Faded");
+  			//	});
+  			$("#second").fadeToggle(2000).slideToggle(2000);
+  				});
+  				});
+  </script>
+</html>

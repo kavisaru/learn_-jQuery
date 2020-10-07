@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+   </head>
+<body>
+    
+  <h2 id="demo">Some Value</h2>
+  <h2 class="demo1">Welcome</h2>
+  <h2 class="demo2">New value</h2>
+  <p>paragraph</p>
+  <button onclick="fn()" id="btn">Click</button>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+function fn(){
+				$("#demo").fadeToggle();
+				$(".demo1").fadeToggle();
+				$(".demo2").fadeToggle();
+				$("p").fadeToggle();
+				 }
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div id="demos" class="ex">
+    <p>Paragraph 1</p></div>
+    <div id="demo2" class="ex">
+    <p>paragraph 2</p>
+    </div>
+    <div id="demo3" class="ex">
+    <ul>
+    <li>list1</li>
+    <li>list2</li>
+    </ul>
+    </div>
+    <button onclick="fn()" id="btn">Click</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+  function fn(){
+  			//	$("#demos").fadeToggle();
+  				//$("#demos,p").fadeToggle()
+  				//$(".ex").fadeToggle();
+  				$("#demo3").fadeToggle();
+  				}
+  </script>
+</html>
